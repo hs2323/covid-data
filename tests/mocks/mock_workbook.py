@@ -16,6 +16,11 @@ class MockWorkbookError(MockWorkbook):
   def __init__(self, *args, **kwargs): 
     self.active = MockIterRowsError()
 
+class MockWorkbookSaveError(MockWorkbook):
+  @staticmethod
+  def save(*args):
+    raise FileNotFoundError
+
 class MockIterRows:
   @staticmethod
   def iter_rows(*args, **kwargs):

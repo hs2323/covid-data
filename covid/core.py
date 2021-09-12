@@ -16,3 +16,5 @@ def start():
     list = parser.open_excel(data_file)
 
     api.get_remote_data(list)
+
+    parser.write_excel(args.path + '/covid.xlsx', list)
