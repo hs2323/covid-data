@@ -13,7 +13,7 @@ with open('LICENSE') as f:
 
 setup(
     name='sample',
-    version='0.0.1',
+    version='1.0.0',
     description='Get COVID data from an API',
     long_description=readme,
     author='Harry Shyket',
