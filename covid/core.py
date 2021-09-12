@@ -1,5 +1,6 @@
 import argparse
 
+from .api import api
 from .config import config
 from .parser import parser
 
@@ -12,4 +13,6 @@ def start():
     params = ['Data', 'file']
     data_file = config.get_config(ini_file, params)
 
-    parser.open_excel(data_file)
+    list = parser.open_excel(data_file)
+
+    api.get_remote_data(list)

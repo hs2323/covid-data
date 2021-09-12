@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+* Added request for remote COVID API.
+* Added requests.
 * Added parsing of initial Excel file.
 * Added openpyxl.
 * Added data file, configuration file and configuration parsing.
