@@ -1,6 +1,7 @@
 import argparse
 
 from .config import config
+from .parser import parser
 
 def start():
     argp=argparse.ArgumentParser()
@@ -9,4 +10,6 @@ def start():
 
     ini_file = './config.ini'
     params = ['Data', 'file']
-    config.get_config(ini_file, params)
+    data_file = config.get_config(ini_file, params)
+
+    parser.open_excel(data_file)

@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+* Added parsing of initial Excel file.
+* Added openpyxl.
 * Added data file, configuration file and configuration parsing.
 * Added argument parsing for file path.
 * Added pytest-mock.
