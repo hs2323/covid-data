@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+* Added argument parsing for file path.
 * Added pytest-mock.
 * Added pytest.
 * Added default setup from [Sample Module Repository](https://github.com/navdeep-G/samplemod).

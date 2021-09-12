@@ -1,12 +1,6 @@
-# -*- coding: utf-8 -*-
-from . import helpers
+import argparse
 
-def get_hmm():
-    """Get a thought."""
-    return 'hmmm...'
-
-
-def hmm():
-    """Contemplation..."""
-    if helpers.get_answer():
-        print(get_hmm())
+def start():
+    argp=argparse.ArgumentParser()
+    argp.add_argument('--path', help='Folder to save your data', required=True)
+    args=argp.parse_args()
